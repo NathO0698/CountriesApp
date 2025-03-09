@@ -1,0 +1,69 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\obj\\Debug\\net8.0\\compressed\\amxak7g734.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\CountriesApp.styles.css",
+      "PackagePath": "staticwebassets\\CountriesApp.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\Images\\Country-flags.png",
+      "PackagePath": "staticwebassets\\Images\\Country-flags.png"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\js\\localStorage.js",
+      "PackagePath": "staticwebassets\\js\\localStorage.js"
+    },
+    {
+      "Id": "C:\\Users\\natha\\OneDrive\\Bureau\\PROGRA 2\\CountriesApp\\CountriesApp\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CountriesApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CountriesApp.props",
+      "PackagePath": "build\\CountriesApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CountriesApp.props",
+      "PackagePath": "buildMultiTargeting\\CountriesApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CountriesApp.props",
+      "PackagePath": "buildTransitive\\CountriesApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

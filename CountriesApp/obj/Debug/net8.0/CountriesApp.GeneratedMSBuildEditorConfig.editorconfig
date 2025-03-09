@@ -1,0 +1,55 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = CountriesApp
+build_property.RootNamespace = CountriesApp
+build_property.ProjectDir = C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3vdllruub6
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uo64nplzwn
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/Pages/Countries.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-7pqtrwaems
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/Pages/CountryDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRyeURldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-9dv5hye314
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/Pages/Favorites.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmF2b3JpdGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-blz9hyxbn5
+
+[C:/Users/natha/OneDrive/Bureau/PROGRA 2/CountriesApp/CountriesApp/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-nfyrdw9fji

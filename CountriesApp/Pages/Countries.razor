@@ -1,0 +1,54 @@
+@page "/countries"
+@using CountriesApp.Models
+@using CountriesApp.Services
+@inject ICountryService CountryService          //to take the country from the API //
+@inject IJSRuntime JSRuntime                    //to call JS method (localStorage)//
+
+<PageTitle>Countries</PageTitle>
+
+<h1>Countries list</h1>
+
+<input type="text" @bind="searchQuery" @onkeyup="SearchCountries" placeholder="Search a Country..." class="search-input" />
+
+@if (filteredCountries == null || !filteredCountries.Any()) {
+    <p>No result found...</p>
+} else {
+    <div class="country-grid">
+        @foreach (var country in filteredCountries) {
+            <div class="country-card">
+                <img src="@country.Flag" alt="Flag of @country.Name">
+                <p><a class="country-name" href="countries/@country.Name">@country.Name</a></p>
+                <button class="button" @onclick="() => AddToFavorites(country)">⭐ Add to favorites</button>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Country>? countries = new();
+    private List<Country>? filteredCountries = new();
+    private string searchQuery = string.Empty;
+    protected override async Task OnInitializedAsync() {
+        countries = await CountryService.GetAllCountriesAsync();
+        filteredCountries = countries;
+    }
+
+    private void SearchCountries() {
+        if (string.IsNullOrWhiteSpace(searchQuery)) {
+            filteredCountries = countries;                                                              // Display all countries if search bar is empty
+        } else {
+            filteredCountries = countries
+                .Where(c => c.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+                .ToList();                                                                              // filter a country by text in the search bar
+        }
+        StateHasChanged();                                                                              // Force the refresh
+    }
+
+    private async Task AddToFavorites(Country country) {
+        var favorites = await JSRuntime.InvokeAsync<List<Country>>("localStorageHelper.loadFavorites");
+        if (!favorites.Any(f => f.Name == country.Name)) {                                                // Check if the country is already in the favorites
+            favorites.Add(country);
+            await JSRuntime.InvokeVoidAsync("localStorageHelper.saveFavorites", favorites);
+        }
+    }
+}

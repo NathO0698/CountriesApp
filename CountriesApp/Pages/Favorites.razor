@@ -1,0 +1,51 @@
+@page "/favorites"
+@using CountriesApp.Models
+@inject IJSRuntime JSRuntime        //to call JS method (localStorage)//
+
+<PageTitle>Favorites</PageTitle>
+
+<h1>My favorites</h1>
+
+<input type="text" @bind="searchQuery" @onkeyup="SearchFavorites" placeholder="Search a Country..." class="search-input" />
+
+@if (filteredFavorites.Count == 0) {
+    <p>No result found...</p>
+} else {
+    <div class="country-grid">
+        @foreach (var country in filteredFavorites) {
+            <div class="country-card">
+                <img src="@country.Flag" alt="Flag of @country.Name">
+                <p><a class="country-name" href="countries/@country.Name">@country.Name</a></p>
+                <button class="button" @onclick="() => RemoveFromFavorites(country)">❌ Remove from favorites</button>
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private List<Country>? favorites = new();
+    private List<Country>? filteredFavorites = new();
+    private string searchQuery = string.Empty;
+    protected override async Task OnInitializedAsync() {
+        favorites = await JSRuntime.InvokeAsync<List<Country>>("localStorageHelper.loadFavorites");
+        filteredFavorites = favorites;
+    }
+
+    private void SearchFavorites() {
+            if (string.IsNullOrWhiteSpace(searchQuery)) {
+                filteredFavorites = favorites;
+            } else {
+                filteredFavorites = favorites
+                    .Where(c => c.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+            StateHasChanged();
+        }
+
+    private async Task RemoveFromFavorites(Country country) {
+        favorites.RemoveAll(f => f.Name == country.Name);
+        await JSRuntime.InvokeVoidAsync("localStorageHelper.removeFavorite", country.Name);
+        await JSRuntime.InvokeVoidAsync("localStorageHelper.saveFavorites", favorites);
+        SearchFavorites();
+    }
+}

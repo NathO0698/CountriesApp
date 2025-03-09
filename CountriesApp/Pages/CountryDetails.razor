@@ -1,0 +1,33 @@
+@page "/countries/{CountryName}"
+@using CountriesApp.Models
+@using CountriesApp.Services
+@inject ICountryService CountryService      //to take the country from the API //
+
+<PageTitle>Country details</PageTitle>
+
+@if (country is null) {
+    <p>Loading...</p>
+} else {
+    <h1>@country.Name</h1>
+    <div class="country-details">
+        <img src="@country.Flag" alt="Flag of @country.Name" style="width:200px;">
+        <p><strong>Official Name :</strong> @country.OfficialName</p>
+        <p><strong>Capital :</strong> @country.Capital</p>
+        <p><strong>Region :</strong> @country.Region</p>
+        <p><strong>Population :</strong> @country.Population.ToString("N0") habitants</p>
+    </div>
+}
+
+@code {
+    [Parameter] public string? CountryName {get; set;}
+    private Country? country;
+    protected override async Task OnInitializedAsync() {
+        var allCountries = await CountryService.GetAllCountriesAsync();
+        if (!string.IsNullOrEmpty(CountryName)) {
+            country = allCountries.FirstOrDefault(c => c.Name.Equals(CountryName, StringComparison.OrdinalIgnoreCase));
+        }
+        if (country is null) {
+            Console.WriteLine($"Pays '{CountryName}' introuvable !");
+        }
+    }
+}

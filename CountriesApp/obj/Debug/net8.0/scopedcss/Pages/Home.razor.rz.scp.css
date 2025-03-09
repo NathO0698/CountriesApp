@@ -1,0 +1,26 @@
+/* CSS File for Home.razor */
+
+h1[b-nfyrdw9fji] {
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+h2[b-nfyrdw9fji] {
+    font-size: 2rem;
+    color: rgb(241, 178, 5);
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+p[b-nfyrdw9fji] {
+    font-size: 1rem;
+    color: rgb(241, 178, 5);
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-align: center;
+}
