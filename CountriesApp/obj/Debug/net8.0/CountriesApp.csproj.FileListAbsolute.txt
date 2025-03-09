@@ -1033,3 +1033,4 @@ C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp\obj\Debug\net8
 C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp\obj\Debug\net8.0\scopedcss\Pages\Favorites.razor.rz.scp.css
 C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp\obj\Debug\net8.0\scopedcss\Pages\Home.razor.rz.scp.css
 C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp\obj\Debug\net8.0\scopedcss\Pages\CountryDetails.razor.rz.scp.css
+C:\Users\natha\OneDrive\Bureau\PROGRA 2\CountriesApp\CountriesApp\obj\Debug\net8.0\CountriesApp.sourcelink.json
