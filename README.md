@@ -13,7 +13,7 @@ L'API utilisée est "REST countries".
 ## Technologies utilisées
 
 - **Blazor WebAssembly**
-- **.NET 6** 
+- **.NET 8** 
 - **C#**
 - **JavaScript (JSRuntime)**
 - **RestCountries API**
