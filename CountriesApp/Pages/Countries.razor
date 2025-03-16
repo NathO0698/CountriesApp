@@ -2,7 +2,7 @@
 @using CountriesApp.Models
 @using CountriesApp.Services
 @inject ICountryService CountryService          //to take the country from the API //
-@inject IJSRuntime JSRuntime                    //to call JS method (localStorage)//
+@inject IJSRuntime JSRuntime                    //to call JS method (localStorage) //
 
 <PageTitle>Countries</PageTitle>
 
@@ -28,9 +28,9 @@
     private List<Country>? countries = new();
     private List<Country>? filteredCountries = new();
     private string searchQuery = string.Empty;
-    protected override async Task OnInitializedAsync() {
+    protected override async Task OnInitializedAsync() {                            //EDIT protected override => public for the test
         countries = await CountryService.GetAllCountriesAsync();
-        filteredCountries = countries;
+        filteredCountries = countries ?? new List<Country>();           //EDIT with ?? new List<Country>() to avoid null
     }
 
     private void SearchCountries() {
@@ -45,7 +45,7 @@
     }
 
     private async Task AddToFavorites(Country country) {
-        var favorites = await JSRuntime.InvokeAsync<List<Country>>("localStorageHelper.loadFavorites");
+        var favorites = await JSRuntime.InvokeAsync<List<Country>>("localStorageHelper.loadFavorites") ?? new List<Country>();  //EDIT with ?? new List<Country>() to avoid null
         if (!favorites.Any(f => f.Name == country.Name)) {                                                // Check if the country is already in the favorites
             favorites.Add(country);
             await JSRuntime.InvokeVoidAsync("localStorageHelper.saveFavorites", favorites);

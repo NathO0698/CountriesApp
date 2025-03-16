@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CountriesApp",
   "resources": {
-    "hash": "sha256-odVepx+WhJFIEDKjYCusOfB2ZI1f6wD2QfeZcXNRT2s=",
+    "hash": "sha256-PEG4VbNzezxvjQf8JG/stSWri0JPWZTbjbBnejAbgCU=",
     "jsModuleNative": {
       "dotnet.native.8.0.8.33hes5pgvx.js": "sha256-juC5sA7gHTLXFEhAKgdM2/RavswpwCtDfjYGsAz2FXg="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-Gz8PyW2/fwihe5ul81OwmRUrU71r+KtbyRw6xlOGD+Q=",
       "netstandard.wasm": "sha256-jMTqIQzoDS810lyhZpMO5eEC36EzntXqSVn+2qwkOMQ=",
       "System.Private.CoreLib.wasm": "sha256-NFj5WE5VLP2LptZIRJCUIc1AMk06FmxpsSILfPISwAw=",
-      "CountriesApp.wasm": "sha256-xMZVQq84vEHfX/H/njJT+m736U85gS9hfgjQJiwD2S0="
+      "CountriesApp.wasm": "sha256-om/Jy6mqFlY4YJD9PusHITZVorPQbMK9SJ21JZL2Cyg="
     },
     "pdb": {
-      "CountriesApp.pdb": "sha256-+El8F8x4F+P6I7kr//hv7RlaxiOey3lLCx9a+8mOygs="
+      "CountriesApp.pdb": "sha256-YFNFCdgaX/RtqlbjzgVwDR7JszJvQ95lklEueOnCzJI="
     }
   },
   "cacheBootResources": true,
