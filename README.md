@@ -13,7 +13,7 @@ L'API utilisée est "REST countries".
 ## Technologies utilisées
 
 - **Blazor WebAssembly**
-- **.NET 6** 
+- **.NET 8** 
 - **C#**
 - **JavaScript (JSRuntime)**
 - **RestCountries API**
@@ -23,7 +23,7 @@ L'API utilisée est "REST countries".
 Avant de démarrer le projet, assurez-vous d'avoir installé :
 
 - [Visual Studio](https://visualstudio.microsoft.com/) ou un autre éditeur compatible avec .NET.
-- [.NET 6 SDK](https://dotnet.microsoft.com/download).
+- [.NET 8 SDK](https://dotnet.microsoft.com/download).
 - [Node.js](https://nodejs.org/) (si vous souhaitez tester les outils frontend).
 
 ## Installation
